@@ -2,7 +2,7 @@ import React from 'react';
 import PromocaoCartao from './components/Promocao/Cartao/Cartao';
 
 function App() {
-  const promocao = {
+  const promotion = {
     "id": 1,
     "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
     "price": 1799,
@@ -23,7 +23,7 @@ function App() {
         margin: '30px auto'
       }}
       >
-      <PromocaoCartao promocao={promocao}/>
+      <PromocaoCartao promocao={promotion}/>
     </div>
   );
 }
