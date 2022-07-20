@@ -7,9 +7,11 @@ const PromocaoList = ({loading, promotions}) => {
         return <div>Carregando...</div>
     }
     return(
-        <div className='promotion-list'>
+        <div className='promotion-list' >
             {promotions.map((promotions) =>(
-            <PromocaoCartao promotion={promotions} />
+            <PromocaoCartao 
+                key={promotions.id}
+                promotion={promotions} />
             ))}
         </div>
     )

@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
-import PaginasPromocaoSearch from './Promocao/Search';
 import PaginasPromocaoForm from "./Promocao/Form";
+import PaginasPromocaoSearch from "./Promocao/Search";
+
 const Root = () =>{
     return(
         <Router>
