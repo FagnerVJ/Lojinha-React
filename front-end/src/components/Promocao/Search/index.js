@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import PromocaoList from '../List/List';
+import PromocaoList from '../List';
 
 import './Search.scss';
 import { Link } from 'react-router-dom';
@@ -14,7 +14,7 @@ const PromocaoSearch = () => {
         if(search){
             params.title_like = search;
         }
-        axios.get('http://localhost:5000/promotions?_embed=comments', {params})
+        axios.get('http://localhost:5000/promotions?_embed=comments&_order=desc&_sort=id', {params})
             .then((res) => {
                 setPromotions(res.data);
             })
@@ -27,7 +27,7 @@ const PromocaoSearch = () => {
         <div className='promocao-search'>
             <header className='promocao-search__header'>
                 <h1>Promocao Show</h1>
-                <Link to="/criacao">Nova Promoção</Link>
+                <Link to="/create">Nova Promoção</Link>
             </header>
             <input 
                 type='search' 

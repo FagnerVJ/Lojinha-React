@@ -1,6 +1,6 @@
 import React from 'react';
-import PromocaoSearch from '../../../components/Promocao/Search/Search';
-import UIContainer from '../../../components/UI/Container/Container';
+import PromocaoSearch from '../../../components/Promocao/Search';
+import UIContainer from '../../../components/UI/Container';
 
 const PaginasPromocaoSearch = () =>{
     

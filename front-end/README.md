@@ -76,3 +76,6 @@ consultar api via url
 http://localhost:5000/promotions
 http://localhost:5000/comments
 http://localhost:5000/promotions?_embed=comments
+
+npm i axios
+https://www.npmjs.com/package/axios

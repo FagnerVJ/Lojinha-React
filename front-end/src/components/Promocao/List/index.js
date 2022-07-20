@@ -1,5 +1,5 @@
 import React from 'react';
-import PromocaoCartao from '../Cartao/Cartao';
+import PromocaoCartao from '../Cartao';
 
 import './List.scss';
 const PromocaoList = ({loading, promotions}) => {
